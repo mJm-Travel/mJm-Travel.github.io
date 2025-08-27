@@ -4,74 +4,24 @@
   <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="mJm Travel" />
-<meta name="description" content="Worldwide Travel Directory Provided by mJm Travel. Looking For Tours, Hotels, Flights ?  All Travel Services are Provided Here.">
-<meta property="og:description" content="Worldwide Travel Directory Provided by mJm Travel. Looking For Tours, Hotels, Flights ?  All Travel Services are Provided Here.">  
-<link rel="pingback" href="https://mjm-travel.freesite.host/xmlrpc.php"><link rel="icon" href="https://mjm-travel.freesite.host/wp-content/uploads/2025/03/cropped-mJm-Travel-Logo-32x32.jpeg" sizes="32x32" />
+<link rel="icon" href="https://mjm-travel.freesite.host/wp-content/uploads/2025/03/cropped-mJm-Travel-Logo-32x32.jpeg" sizes="32x32" />
 <link rel="icon" href="https://mjm-travel.freesite.host/wp-content/uploads/2025/03/cropped-mJm-Travel-Logo-192x192.jpeg" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://mjm-travel.freesite.host/wp-content/uploads/2025/03/cropped-mJm-Travel-Logo-180x180.jpeg" />
 <meta name="msapplication-TileImage" content="https://mjm-travel.freesite.host/wp-content/uploads/2025/03/cropped-mJm-Travel-Logo-270x270.jpeg" />
   <meta charset="UTF-8">
-  <title>Worldwide Travel Directory</title>
+  <title>mJm Travel</title>
   <style>
     ul { list-style-type: none; margin-left: 20px; }
     li { margin: 4px 0; }
   </style> 
 </head>
 <body>
-  <h1>📂 Worldwide Travel Directory</h1>
-  <ul id="repo-tree"></ul>
-
- <script>
-  const repoOwner = "mJm-Travel"; // 👈 change this
-  const repoName = "Directory";   // 👈 change this
-  const branch = "main";          // or "master" depending on your repo
-
-  async function loadRepoTree() {
-    const url = `https://api.github.com/repos/${repoOwner}/${repoName}/git/trees/${branch}?recursive=1`;
-
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      const files = data.tree;
-
-      // Collect first-level folders only
-      let topFolders = new Set();
-
-      files.forEach(item => {
-        if (item.type === "tree") {
-          let parts = item.path.split("/");
-          if (parts.length === 1) {
-            topFolders.add(parts[0]); // only first-level folder
-          }
-        }
-      });
-
-      // Build the list
-      let ul = document.createElement("ul");
-      topFolders.forEach(folder => {
-        let li = document.createElement("li");
-        let a = document.createElement("a");
-
-        // Link to GitHub Pages directory
-        a.href = `${folder}/`;
-        a.textContent = "📁 " + folder;
-
-        li.appendChild(a);
-        ul.appendChild(li);
-      });
-
-      document.getElementById("repo-tree").appendChild(ul);
-
-    } catch (err) {
-      console.error("Error loading repo tree:", err);
-    }
-  }
-
-  loadRepoTree();
-</script>
+  <h1>📂 mJm Travel</h1>
+ <a href="https://mjm-travel.github.io/Directory/" target="_blank"><h2>mJm Travel Directory</h2></a>
+<P>Worldwide Travel Directory Provided by mJm Travel. <br>Looking For Tours, Hotels, Flights ?  <br>All Travel Services are Provided Here.</P>  
 <footer style="text-align:center; margin-top:20px; padding:10px; font-size:14px; border-top:1px solid #ccc;">
     
-  <P>Worldwide Travel Directory Provided by mJm Travel. <br>Looking For Tours, Hotels, Flights ?  <br>All Travel Services are Provided Here.</P>  
+  
   <br><b>mJm Travel © 2014−<span id="year"></span><br></b><br>
 
 <script>
