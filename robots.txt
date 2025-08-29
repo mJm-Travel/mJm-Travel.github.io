@@ -1,8 +1,10 @@
 User-agent: *
 Disallow:
 
+Sitemap: https://mJm-Travel.github.io/sitemap.xml
 Sitemap: https://mjm-travel.github.io/Trending/sitemap.xml
 Sitemap: https://mjm-travel.github.io/Trending/WPBeginner-Sitemap.xml
+Sitemap: https://mjm-travel.github.io/Trending/Zoho-Sitemap.xml
 Sitemap: https://mjm-travel.github.io/Trending/bluehost-Sitemap.xml
 Sitemap: https://mJm-Travel.github.io/Directory/sitemap.xml
 Sitemap: https://mJm-Travel.github.io/Directory/Argentina-Sitemap.xml
