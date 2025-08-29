@@ -102,4 +102,13 @@
   <sitemap>
     <loc>https://mJm-Travel.github.io/Directory/Vietnam-Sitemap.xml</loc>
     </sitemap>
+    <sitemap>
+    <loc>https://mJm-Travel.github.io/Trending/Zoho-Sitemap.xml</loc>
+    </sitemap>
+    <sitemap>
+    <loc>https://mJm-Travel.github.io/Trending/WPBeginner-Sitemap.xml</loc>
+    </sitemap>
+    <sitemap>
+    <loc>https://mJm-Travel.github.io/Trending/bluehost-Sitemap.xml</loc>
+    </sitemap>
 </sitemapindex>
